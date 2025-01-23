@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        font-family: "Gowun Dodum", serif;
+        font-weight: 400;
+        font-style: bold;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+        color: #4caf50;
+      }
+      .section {
+        margin-bottom: 20px;
+        padding: 15px;
+        background: #f4f4f4;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .card {
+        display: flex;
+        flex-direction: row;
+      }
+      .section:hover {
+        background-color: #e8f5e9;
+      }
+      .section h2 {
+        border-bottom: 2px solid #4caf50;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+      }
+      .hobby-list,
+      .future-plans {
+        list-style: square inside;
+        margin: 0;
+        padding: 0;
+      }
+      .hobby-list li,
+      .future-plans li {
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>프로필</h1>
+      <div class="section">
+        <h2>기본 정보</h2>
+        <div class="card">
+          <img
+            src="./IMG_2663.jpg"
+            alt="Profile Picture"
+            style="
+              width: 20%;
+              border-radius: 8px;
+              margin-bottom: 10px;
+              margin-right: 20px;
+            "
+          />
+          <div class="content">
+            <p><strong>이름:</strong> <span class="highlight">심영민</span></p>
+            <p><strong>나이:</strong> 24살 (2001년생)</p>
+            <p><strong>전공:</strong> 소프트웨어융합전공</p>
+            <p><strong>MBTI:</strong> INFJ</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" onclick="toggleContent(this)">
+        <h2>좋았던 경험</h2>
+        <div class="card">
+          <img
+            src="./image (1).png"
+            alt="Profile Picture"
+            style="
+              width: 20%;
+              height: 20%;
+              border-radius: 8px;
+              margin-bottom: 10px;
+              margin-right: 20px;
+            "
+          />
+          <img
+            src="./image (2).png"
+            alt="Profile Picture"
+            style="
+              width: 20%;
+              height: 20%;
+              border-radius: 8px;
+              margin-bottom: 10px;
+              margin-right: 20px;
+            "
+          />
+          <img
+          src="./20241103_190438.jpg"
+          alt="Profile Picture"
+          style="
+          width: 20%;
+          height: 20%;
+          border-radius: 8px;
+          margin-bottom: 10px;
+          margin-right: 20px;
+          "
+          />
+          <img
+            src="./image (3).png"
+            alt="Profile Picture"
+            style="
+              width: 25%;
+              height: 25%;
+              border-radius: 8px;
+              margin-bottom: 10px;
+              margin-right: 20px;
+            "
+          />
+        </div>
+        <span><br>날씨 좋은 날 갔던 여행들!! </span>
+      </div>
+
+      <div class="section" onclick="toggleContent(this)">
+        <h2>관심사</h2>
+        <div class="content">
+          <p>
+            <strong>운동 :</strong> 크로스핏 -> 골프 (골프 배운지 아직
+            한달입니답..!)
+          </p>
+          <p><strong>취미 :</strong></p>
+          <ul class="hobby-list">
+            <li>영화, 드라마, 애니 다양하게 봄 <br>&nbsp;&nbsp;&nbsp;(최근본 영화중에 에브리띵 에브리웨어 올 댓 원스 재밌게 봤어요! 철학적입니다 !!)</li>
+            <li>주로하는 게임 : 롤 (골드2, 주로 원딜)</li>
+            <p><strong>음식 :</strong> 치킨, 주먹고기 (짱 좋아해요!!! )</p>
+            <div style="display: flex; align-items: center">
+            <img
+          src="./image.png"
+          alt="Profile Picture"
+          style="
+          width: 40%;
+          height: 40%;
+          border-radius: 8px;
+          margin-right: 20px;
+          "
+          />
+          <img
+          src="./IMG_2664.png"
+          alt="Profile Picture"
+          style="
+          width: 23%;
+          height: 23%;
+          transform:rotate(270deg);
+          border-radius: 8px;
+          margin-left: 50px;
+          margin-right: 20px;
+          "
+          />
+          <div/>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section" onclick="toggleContent(this)">
+        <h2>계획</h2>
+        <div class="content">
+          <ul class="future-plans">
+            <li>무사히 유레카 수료 후에 꼭 취업하기!</li>
+            <li>육체, 정신 모두 건강하게 지내기!</li>
+            <li>취업 전에 혼자 해외 여행 다녀오기!</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
